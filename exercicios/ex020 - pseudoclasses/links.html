@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liks</title>
+</head>
+
+<style>
+        body{
+                font-family: sans-serif;
+                color: brown;
+                text-decoration: none;
+        }
+        /*HOVER é para quando passar o mouse em cima*/
+        a:hover{
+                font-weight: bolder;
+                font-size: 105%;
+                }
+                /*VISITED é para quando o link já tiver sido visitado*/
+        a:visited{
+
+        }     
+        /*ACTIVE é para quando estiver clicado, ativo, atualmente em uso, açao naquele exato momento*/
+        a:active{
+                font-size: 140%;
+        }
+
+        #face {
+                color: blue;
+                text-decoration: none;
+        }
+        #insta{
+                
+                background: linear-gradient(90deg, #ff7a18, #af002d 70%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+        }
+        #linkedin{  
+            color: rgb(61, 111, 172);
+                text-decoration: none;
+                
+
+        }   
+        /*para colocar um icone antes do kink ou do texto usa o pseudo-elemento BEFORE com 2x ":"*/
+        a:hover::before{
+                content: "☛  ";
+                }
+        a:hover::after{
+                content: "☚";
+        }
+
+
+
+</style>
+<body>
+    <h1>mais pseudo-classes</h1>
+    <ul>
+        <li> <a id="face" href="https://www.facebook.com/">Facebook</a></li>
+        <li><a id="insta" href="https://www.instagram.com/">Instagram</a></li>
+        <li><a id="linkedin" href="https://www.linkedin.com/in/renato-birochi/">linkedin</a></li>
+    </ul>
+
+
+    
+</body>
+</html>

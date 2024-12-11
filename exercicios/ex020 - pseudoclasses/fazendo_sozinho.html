@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fazebdo sozinho</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+    body{   font-family: sans-serif;
+    }
+        h1 { background-color: black;
+            color: wheat;
+            text-align: center;
+            padding: 10px;
+        } 
+        li{
+            color: rgb(90, 200, 71);
+            font-weight: bolder;
+            margin-top: 10px;
+        }  
+        p{ 
+            font-family: afacad flux;
+            font-weight: normal;
+            color: cadetblue;
+        }
+        li > p{ display: none;}
+
+        li:hover {color: rgb(19, 93, 14);
+            content: "Segure clicado para ler o significado";
+        }
+
+        #class:hover:active> p {
+            display: block;
+        }
+        #id:hover:active> p {
+            display: block;
+        }
+        #pseudoclass:hover:active> p {
+            display: block;
+        }
+        #pseudoelementos:hover:active> p {
+            display: block;
+        }
+        #clildren:hover:active> p {
+            display: block;
+        }
+        li:hover::after {content: "Segure clicado para ler o significado";
+                        color: chartreuse;
+                        font-family: afacad flux;
+                        font-weight: normal;
+                        background-color: black;
+                        padding: 2px;
+                        border-radius: 50px;
+                        font-size: 10px;
+                        margin-left: 20px;
+                    
+                    }
+        li:active::after {
+                        content: "";
+                        background-color: rgba(0, 0, 0, 0);}
+        
+        li:hover {cursor: pointer;}
+
+
+
+
+</style>
+<body>
+    <h1>fazendo sozinho </h1>
+    <ul>
+        <li id="id">ID "  #  " <p>ID serve para identificar um único elemento, não pode ser usado mais de um ID de mesmo nome.</p></li>
+        <li id="class">Class " . " <p>CLass serve para formatar um grupo de elementos, uma classe de elementos, vários elementos podem ter o mesmo nome de class, todos os que estiverem o mesmo nome, terão a mesmo stylo de formatação.</p></li>
+        <li id="pseudoclass">Pseudo-class " : " <p>serve para dar configurações extras nas class, como por exemplo HOVER, que serve para dar uma regra de stylo ao passar o mouse em cima daquela class (ou ID) que também funciona</p></li>
+        <li id="pseudoelementos">Pseudo-elementos "  ::  " <p>serve para dar configurações extras para os elementos, como por exemplo o Before e after, que são para adicionar algo antes do elemento ou depois do elemento, respectivamente, ou ambos.</p></li>
+        <li id="clildren">Clildren "  >  " <p>serve para configurar algo que está dentro de outro, por exemplo uma Div que tem um parágrafo dentro dela, o Clildren configura o stylo daquele parágrafo sem interferir na DIV</p></li>
+    </ul>
+</body>
+</html>

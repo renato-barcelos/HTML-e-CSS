@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body{
+        background-image: linear-gradient( to top, rgb(63, 134, 133), rgb(114, 225, 216));
+        font-family: ubuntu, sans-serif;
+}
+h1#principal{
+        color: rgb(255, 255, 255);
+        font-size: 2.3em;
+        text-align: center;
+        text-shadow: rgb(19, 71, 82) 0px 0px 4px;
+        background-color:rgb(63, 134, 133);
+        
+}
+.basico{
+        color: rgb(2, 176, 31);
+        display: block;
+        background-color: rgba(128, 255, 0, 0.152);
+}
+.intermediario{
+        color: rgb(244, 192, 95);
+        background-color: rgba(222, 184, 135, 0.289);
+}
+.avancado{
+        color: rgb(242, 33, 33);
+        background-color: rgba(174, 22, 22, 0.448);
+}
+.destaque {
+        background-color: yellow;
+        border-radius: 10px;
+        
+        padding: 2px 10px ;
+}

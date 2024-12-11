@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <h2> Tente Abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</h2>
+    
+    <picture>
+        <source media="(max-width:750px)" srcset="imagem/imagem_p.png" type="image/png">  
+        <source media="(max-width:1050px)" srcset="imagem/imagem_m.png" type="image/png">   
+        <img src="imagem/imagem_g.png" alt="imagemG flexível">
+    </picture>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/imagem_p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagem/imagem_m.png" type="image/png">
+        <img src="imagem/imagem_g.png" alt="imagem g">
+       </picture>
+
+    <p>a Tag <strong>< picture ></strong> é uma tag poderosa onde organiza diferentes imagens para diferentes tipos e tamanhos de telas </picture></p>
+    <p><b>SEMPRE colocar as imagens maiores no final e as menores no início, seguir essa ordem crescente para funcionar.</b></p>
+    <br>
+    <h1>áudios</h1>
+    <p>vamos aprender a reproduzir audios no html 5</p>
+    <audio preload="metadata" src="musicas/dune-dancer-patrick-patrikios.mp3" controls></audio><br>
+    <audio preload="metadata" src="musicas/veil-of-mysteries-patrickp-atrikios.mp3" controls></audio>
+
+    <p>caso o autoplay automático não funcione, pode usar o < audio > </p>
+    <p>< audio preload="metadata" src="musicas/veil-of-mysteries-patrickp-atrikios.mp3" controls > < /audio >/p>
+        <p>o metadata é bom para que o site nao entenda que só terminou de carregar quando o arquivo de audio termine de fazer o download</p>
+</body>
+</html>
